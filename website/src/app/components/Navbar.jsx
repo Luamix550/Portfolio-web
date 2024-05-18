@@ -3,24 +3,15 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <span className="text-white text-xl font-bold">dev</span>
-          </div>
-          {/* Navigation Links */}
-          <div className="flex">
-            <a href="#" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-lg font-medium pt-6">Home</a>
-            <a href="#" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-lg font-medium pt-6">About me</a>
-            <a href="#" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-lg font-medium pt-6">Contact</a>
-          </div>
-          {/* Avatar */}
-          <div className="flex items-center">
-              <div className="relative w-10 h-10 mt-6 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-        <svg className="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"></path></svg>
-          </div>
+    <nav className="fixed top-0 inset-x-0 z-50">
+      <div className="flex justify-center">
+        <div className="shadow-2xl bg-[#00000017] backdrop-blur-md rounded-lg">
+          <div className="flex justify-center items-center h-16 space-x-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> {/* Ajuste de espaciado en dispositivos grandes */}
+            <a href="#1" className="text-white hover:text-gray-400 px-2 py-2 rounded-md text-lg sm:text-xl font-extrabold">Home</a> {/* Ajuste de tamaño de texto en dispositivos pequeños */}
+            <a href="#2" className="text-white hover:text-gray-400 px-2 py-2 rounded-md text-lg sm:text-xl font-extrabold">About me</a>
+            <a href="#3" className="text-white hover:text-gray-400 px-2 py-2 rounded-md text-lg sm:text-xl font-extrabold">Projects</a>
+            <a href="#4" className="text-white hover:text-gray-400 px-2 py-2 rounded-md text-lg sm:text-xl font-extrabold">Skills</a>
+            <a href="#5" className="text-white hover:text-gray-400 px-2 py-2 rounded-md text-lg sm:text-xl font-extrabold">Contact</a>
           </div>
         </div>
       </div>
