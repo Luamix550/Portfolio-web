@@ -1,6 +1,9 @@
 import React from "react";
-import { Card, CardHeader, CardFooter, Image, Button } from "@nextui-org/react";
-import Modal from "./Modal"
+import { Card, CardHeader, CardFooter, Image} from "@nextui-org/react";
+import Modal from "./modal/Modal"
+import Modal2 from "./modal/Modal2" 
+import Modal3 from "./modal/Modal3"
+import Modal4 from "./modal/Modal4"
 
 export default function App() {
   return (
@@ -8,7 +11,7 @@ export default function App() {
       <Card className="col-span-12 sm:col-span-18 mb-6">
         <CardHeader className="absolute z-10 top-1 flex-col !items-start">
           <p className="text-tiny text-white/60 uppercase font-bold">Holberton School</p>
-          <h1 className="text-white font-bold text-large">Clone hbnb</h1>
+          <h1 className="text-white font-bold text-large">Clone Airbnb</h1>
         </CardHeader>
         <Image
           removeWrapper
@@ -16,7 +19,7 @@ export default function App() {
           className="z-0 w-full h-full object-cover"
           src="https://i.imgur.com/fphVGX5.png"
         />
-        <CardFooter className="absolute bg-black/40 bottom-0 z-10 w-full border-t-1 border-default-600 dark:border-default-100">
+        <CardFooter className="absolute bg-black/40 bottom-0 z-10 w-full  border-default-600 dark:border-default-100">
           <div className="flex flex-grow gap-2 items-center justify-between">
             <div className="flex flex-col">
               <p className="text-tiny text-white/60">About the project</p>
@@ -39,12 +42,14 @@ export default function App() {
           className="z-0 w-full h-full object-cover"
           src="https://i.imgur.com/vlZzI1u.png"
         />
-        <CardFooter className="absolute bg-black/40 bottom-0 z-10 w-full border-t-1 border-default-600 dark:border-default-100">
+        <CardFooter className="absolute bg-black/40 bottom-0 z-10 w-full border-default-600 dark:border-default-100">
           <div className="flex flex-grow gap-2 items-center justify-between">
             <div className="flex flex-col">
               <p className="text-tiny text-white/60">About the project</p>
             </div>
-            <Button radius="full" size="sm">Click here</Button>
+            <div>
+            <Modal2/>
+            </div>
           </div>
         </CardFooter>
       </Card>
@@ -59,12 +64,14 @@ export default function App() {
           className="z-0 w-full h-full object-cover"
           src="https://i.imgur.com/kz3ORFR.png"
         />
-        <CardFooter className="absolute bg-black/40 bottom-0 z-10 w-full border-t-1 border-default-600 dark:border-default-100">
+        <CardFooter className="absolute bg-black/40 bottom-0 z-10 w-full  border-default-600 dark:border-default-100">
           <div className="flex flex-grow gap-2 items-center justify-between">
             <div className="flex flex-col">
               <p className="text-tiny text-white/60">About the project</p>
             </div>
-            <Button radius="full" size="sm">Click here</Button>
+            <div>
+            <Modal3/>
+            </div>
           </div>
         </CardFooter>
       </Card>
@@ -80,12 +87,14 @@ export default function App() {
           className="z-0 w-full object-cover"
           src="https://i.imgur.com/Zcm2dGM.png"
         />
-        <CardFooter className="absolute bg-black/40 bottom-0 z-10 w-full border-t-1 border-default-600 dark:border-default-100">
+        <CardFooter className="absolute bg-black/40 bottom-0 z-10 w-full dark:border-default-100">
           <div className="flex flex-grow gap-2 items-center justify-between">
             <div className="flex flex-col">
               <p className="text-tiny text-white/60">About the project</p>
             </div>
-            <Button radius="full" size="sm">Click here</Button>
+            <div>
+            <Modal4/>
+            </div>
           </div>
         </CardFooter>
       </Card>

@@ -7,7 +7,12 @@ export default function App() {
 
   return (
     <>
-      <Button onPress={onOpen}>Open Modal</Button>
+      <Button 
+        className="bg-black border border-gray-500 text-white hover:bg-gray-700 hover:border-gray-700"
+        onPress={onOpen}
+      >
+        Click Here
+      </Button>
       <Modal 
         backdrop="opaque" 
         isOpen={isOpen} 
@@ -19,7 +24,7 @@ export default function App() {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">Clone Airbnb Restful API</ModalHeader>
               <ModalBody>
                 <p> 
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -40,10 +45,16 @@ export default function App() {
                 </p>
               </ModalBody>
               <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
+                <Button 
+                  className="bg-black border border-gray-500 text-white hover:bg-gray-700 hover:border-gray-700"
+                  onPress={onClose}
+                >
                   Close
                 </Button>
-                <Button color="primary" onPress={onClose}>
+                <Button 
+                  className="bg-black border border-gray-500 text-white hover:bg-gray-700 hover:border-gray-700"
+                  onPress={onClose}
+                >
                   Action
                 </Button>
               </ModalFooter>
